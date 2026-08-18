@@ -1151,6 +1151,11 @@ $('#zufuhr').onchange=async e=>{
   $('#zufuhr').value=daten.zufuhr;
   slotsRendern(); rezepteRendern(); vorratRendern(); backupStatusAktualisieren();
   navZeigen('uebersicht');
+  /* iOS berechnet die Bildschirmhöhe beim allerersten Start als Standalone-App manchmal falsch,
+     wodurch fest positionierte Elemente wie die Navigation zu hoch sitzen. Ein winziger,
+     unsichtbarer Scroll-Impuls kurz nach dem Laden zwingt WebKit, die Höhe neu zu berechnen. */
+  window.scrollTo(0,1);
+  setTimeout(()=>window.scrollTo(0,0), 60);
 })();
 </script>
 </body>
