@@ -212,8 +212,8 @@ input:focus{border-color:var(--jetzt)}
 .batch-portionen{gap:6px}
 .frisch{color:var(--kommt)} .knapp{color:var(--jetzt)} .abgelaufen{color:var(--luecke)}
 
-nav{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--karte);border-top:1px solid var(--kante);padding-bottom:var(--safe-b);display:flex;box-shadow:var(--schatten-nav);transform:translateZ(0)}
-nav button{flex:1;background:none;border:none;padding:9px 2px 8px;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--karte);border-top:1px solid var(--kante);padding-bottom:var(--safe-b);display:flex;box-shadow:var(--schatten-nav);transform:translateZ(0);-webkit-transform:translateZ(0);will-change:transform}
+nav button{flex:1;background:none;border:none;padding:8px 1px 7px;display:flex;flex-direction:column;align-items:center;gap:3px;cursor:pointer;touch-action:manipulation}
 nav .icon-wrap{width:32px;height:25px;display:flex;align-items:center;justify-content:center;border-radius:8px}
 nav button[aria-selected=true] .icon-wrap{background:color-mix(in srgb, var(--jetzt) 14%, transparent)}
 nav svg{width:18px;height:18px;stroke:var(--matt);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
