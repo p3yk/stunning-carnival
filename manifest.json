@@ -1,7 +1,7 @@
 {
   "name": "Fitness",
   "short_name": "Fitness",
-  "start_url": "./",
+  "start_url": "./fitness.html",
   "display": "standalone",
   "background_color": "#141B24",
   "theme_color": "#141B24",
