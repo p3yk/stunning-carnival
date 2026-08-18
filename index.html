@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="theme-color" content="#101010">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Übersicht</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --grund:#101010; --karte:#1A1A1A; --kante:#2A2A2A;
+  --text:#EDEDED; --matt:#8A8A8A;
+  --safe-t: env(safe-area-inset-top, 0px); --safe-b: env(safe-area-inset-bottom, 0px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--grund);color:var(--text);font-family:'Barlow',sans-serif;
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:calc(24px + var(--safe-t)) 18px calc(24px + var(--safe-b));-webkit-font-smoothing:antialiased}
+.wrap{width:100%;max-width:420px}
+h1{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--matt);text-align:center;margin:0 0 28px}
+a.karte{display:flex;align-items:center;gap:14px;background:var(--karte);border:1px solid var(--kante);
+  border-radius:14px;padding:16px 18px;margin-bottom:12px;text-decoration:none;color:var(--text);
+  box-shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.18)}
+a.karte:active{opacity:.75}
+a.karte img{width:44px;height:44px;border-radius:11px;flex-shrink:0;display:block}
+.karte-text{flex:1;min-width:0}
+.karte-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;letter-spacing:.02em}
+.karte-sub{font-size:12.5px;color:var(--matt);margin-top:2px}
+.karte-pfeil{font-family:'Barlow Condensed',sans-serif;font-size:20px;color:var(--matt);flex-shrink:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Übersicht</h1>
+  <a class="karte" href="fitness.html">
+    <img src="icon-192.png" alt="">
+    <div class="karte-text"><div class="karte-name">Fitness</div><div class="karte-sub">Training, Körperwerte, Ausdauer</div></div>
+    <span class="karte-pfeil">›</span>
+  </a>
+  <a class="karte" href="ernaehrung.html">
+    <img src="ernaehrung-icon-192.png" alt="">
+    <div class="karte-text"><div class="karte-name">Ernährung</div><div class="karte-sub">Plan, Rezepte, Vorrat</div></div>
+    <span class="karte-pfeil">›</span>
+  </a>
+  <a class="karte" href="routine.html">
+    <img src="routine-icon-192.png" alt="">
+    <div class="karte-text"><div class="karte-name">Routine</div><div class="karte-sub">Tagesabläufe, Standardpläne</div></div>
+    <span class="karte-pfeil">›</span>
+  </a>
+</div>
+</body>
+</html>
